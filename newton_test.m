@@ -17,9 +17,9 @@ function newtons_method_test()
     x0 = 0.5;
     
     % Solve using Newton's method
-    root_A = newton(f_A, df_A, x0, tol, max_iter);
-    root_B = newton(f_B, df_B, x0, tol, max_iter);
-    root_C = newton(f_C, df_C, x0, tol, max_iter);
+    root_A = newtons(f_A, df_A, x0, tol, max_iter);
+    root_B = newtons(f_B, df_B, x0, tol, max_iter);
+    root_C = newtons(f_C, df_C, x0, tol, max_iter);
     
     fprintf('Root for f_A: %.10f\n', root_A);
     fprintf('Root for f_B: %.10f\n', root_B);
